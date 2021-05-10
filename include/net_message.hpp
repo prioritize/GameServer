@@ -1,6 +1,7 @@
 #pragma once
-#include "net_common.hpp"
 #include <vector>
+#include <memory>
+#include "net_common.hpp"
 
 namespace net {
 template <typename T>
@@ -76,5 +77,5 @@ struct owned_message {
         os << msg.msg;
         return os;
     }
-}
+};
 }

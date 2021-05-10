@@ -20,6 +20,7 @@ set(Headers
     )
 find_library(Boost QUIET components log system required)
 add_executable(${Simp} ${SimpleExec} ${Headers})
+add_executable()
 set(CMAKE_CXX_FLAGS
 "-g -Wall -DBOOST_LOG_DYN_LINK -pthread")
 add_library(${This} STATIC ${Sources} ${Headers})
